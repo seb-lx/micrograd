@@ -38,17 +38,11 @@ public:
         backward{ []() {} }
     {}
 
+    auto print_graph(std::size_t depth = 0) const -> void;
+
     friend auto operator<<(std::ostream& stream, const Value& value) -> std::ostream& {
         stream << std::format("Value({}), op='{}'", value.data, value.op); 
         return stream;
-    }
-
-    auto print_graph(std::size_t depth = 0) const -> void {
-        std::string indent(depth * 4, ' ');
-        std::cout << indent << std::format("Value({:.2f}) op='{}' grad='{:.2f}'\n", data, op, grad);
-        for (const auto& child: children) {
-            child->print_graph(depth + 1);
-        }
     }
 };
 

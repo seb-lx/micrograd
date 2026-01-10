@@ -6,6 +6,15 @@
 namespace micrograd {
 
 
+auto Value::print_graph(std::size_t depth) const -> void {
+    std::string indent(depth * 4, ' ');
+    std::cout << indent << std::format("Value({:.2f}) op='{}' grad='{:.2f}'\n", data, op, grad);
+    for (const auto& child: children) {
+        child->print_graph(depth + 1);
+    }
+}
+
+
 auto backward(const ValuePtr& root) -> void {
     std::vector<ValuePtr> topo;
     std::unordered_set<Value*> visited;

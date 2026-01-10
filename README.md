@@ -2,9 +2,9 @@
 Implementation of micrograd in modern C++ from the course "Neural Networks: Zero to Hero" by Andrej Karpathy (https://karpathy.ai/zero-to-hero.html).
 
 ### results
-![generated moons dataset](plot/moons_dataset.csv)
+![generated moons dataset](https://github.com/seb-lx/micrograd/blob/main/plot/moons_dataset.csv)
 
-![decision boundary](plot/moons_decision_boundary.csv)
+![decision boundary](https://github.com/seb-lx/micrograd/blob/main/plot/moons_decision_boundary.csv)
 
 ### build
 debug

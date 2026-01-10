@@ -6,7 +6,7 @@ Implementation of micrograd in modern C++ from the course "Neural Networks: Zero
 
 ![decision boundary](https://github.com/seb-lx/micrograd/blob/main/plot/decision_boundary.png)
 
-<img src="https://github.com/seb-lx/micrograd/blob/main/plot/decision_boundary.png" alt="Alt text" width="200">
+<img src="https://github.com/seb-lx/micrograd/blob/main/plot/decision_boundary.png" alt="Alt text" width="600">
 
 ### build
 debug

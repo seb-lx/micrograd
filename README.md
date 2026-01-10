@@ -5,11 +5,8 @@ Implementation of micrograd in modern C++ from the course "Neural Networks: Zero
 <img src="https://github.com/seb-lx/micrograd/blob/main/plot/moons_dataset.png" alt="Alt text" width="700">
 <img src="https://github.com/seb-lx/micrograd/blob/main/plot/decision_boundary.png" alt="Alt text" width="700">
 
-### build
-debug
-
+### build debug
 g++ -std=c++20 -pedantic-errors -ggdb -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -Werror engine.cpp nn.cpp gen.cpp main.cpp -o main
 
-release
-
+### build release
 g++ -std=c++20 -pedantic-errors -O2 -DNDEBUG engine.cpp nn.cpp gen.cpp main.cpp -o main

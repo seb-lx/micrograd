@@ -1,5 +1,5 @@
 # micrograd
-Implementation of micrograd in modern C++ from the course "Neural Networks: Zero to Hero" by Andrej Karpathy (https://karpathy.ai/zero-to-hero.html).
+Implementation of Andrej Karpathy's micrograd in C++. Following the video series "Neural Networks: Zero to Hero" by Andrej Karpathy (https://karpathy.ai/zero-to-hero.html).
 
 ### results
 <img src="https://github.com/seb-lx/micrograd/blob/main/plot/moons_dataset.png" alt="Alt text" width="700">
